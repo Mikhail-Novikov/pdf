@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta charset="UTF-8" />
+  <title>Отчёт физлица</title>
+  <link rel="stylesheet" href="./print.css" />
+</head>
+
+<body class="wrapper">
+  <table>
+    <thead>
+      <tr>
+        <th class="txt-left">
+          <img alt="Сбер Корус"
+            src="data:image/png;base64,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" />
+        </th>
+        <th class="txt-right txt-normal">
+          <p class="txt-small">Сервис проверки физических лиц</p>
+          <span class="txt-small">Отчёт от 30 сентября 2021 года</span>
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td colspan="2">
+          <div class="print-portrait margin-top-32">
+            <table>
+              <tbody>
+                <tr>
+                  <td>
+                    <h1>Константинопольский Константин Константинович</h1>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="margin-bottom-24 margin-top-8">
+                      <table>
+                        <colgroup>
+                          <col style="width: 50%" />
+                          <col style="width: 50%" />
+                        </colgroup>
+                        <tbody>
+                          <tr>
+                            <td class="padding-bottom-12 txt-gray">Дата рождения</td>
+                            <td class="padding-bottom-12">0*.**.***0</td>
+                          </tr>
+                          <tr>
+                            <td class="padding-bottom-12 txt-gray">Паспорт</td>
+                            <td class="padding-bottom-12">00** ****00</td>
+                          </tr>
+                          <tr>
+                            <td class="padding-bottom-12 txt-gray">Водительское удостоверение</td>
+                            <td class="padding-bottom-12">
+                              00** ****00
+                              <div class="subtitle">выдано 00.00.000</div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="txt-gray">ИНН</td>
+                            <td>
+                              123456789012
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+
+                    <hr>
+
+                    <h2>Результат проверки</h2>
+
+                    <div class="margin-top-12">
+                      <table>
+                        <colgroup>
+                          <col style="width: 50%" />
+                          <col style="width: 50%" />
+                        </colgroup>
+                        <tbody>
+                          <tr>
+                            <td class="padding-bottom-8">
+                              <i class="icon-error"></i>
+                              Действительность паспорта
+                            </td>
+                            <td class="padding-bottom-8">
+                              <i class="icon-warning"></i>
+                              Залоги движимого имущества
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="padding-bottom-8">
+                              <i class="icon-warning"></i>
+                              ИНН
+                            </td>
+                            <td class="padding-bottom-8">
+                              <i class="icon-error"></i>
+                              Водительское удостоверение
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="padding-bottom-8">
+                              <i class="icon-error"></i>
+                              Исполнительные производства
+                            </td>
+                            <td class="padding-bottom-8">
+                              <i class="icon-warning"></i>
+                              Штрафы ГИБДД
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="padding-bottom-8">
+                              <i class="icon-error"></i>
+                              Банкротство
+                            </td>
+                            <td class="padding-bottom-8">
+                              <i class="icon-error"></i>
+                              Массовый директор или учредитель
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="padding-bottom-8">
+                              <i class="icon-error"></i>
+                              Нахождение в розыске
+                            </td>
+                            <td class="padding-bottom-8">
+                              <i class="icon-help"></i>
+                              Проверка по ЕГРИП
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="padding-bottom-8">
+                              <i class="icon-error"></i>
+                              Террористы и экстремисты
+                            </td>
+                            <td class="padding-bottom-8">
+                              <i class="icon-warning"></i>
+                              Проверка по ЕГРЮЛ
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="print-portrait">
+            <div class="page-break-avoid margin-bottom-32">
+              <h2>Действительность паспорта</h2>
+              <p class="margin-bottom-12 txt-gray">Определение действительности паспорта по данным МВД РФ.</p>
+              <i class="icon-error"></i>
+              Найден в базе недействительных паспортов
+            </div>
+            <div class="page-break-avoid margin-bottom-32">
+              <h2>ИНН</h2>
+              <p class="margin-bottom-12 txt-gray">Предоставление ИНН физического лица или сообщение о его отсутствии по
+                данным ФНС РФ.</p>
+              <i class="icon-warning"></i>
+              ИНН не найден в базе ФНС
+            </div>
+
+            <div class="page-break-avoid margin-bottom-32">
+              <h2>Исполнительные производства</h2>
+              <p class="margin-bottom-12 txt-gray">Проверка наличия исполнительного производства судебных приставов по
+                данным ФССП РФ.</p>
+              <i class="icon-error"></i>
+              Найдено текущих исполнительных производств: 3
+              <div class="margin-bottom-24 margin-top-16">
+                <table>
+                  <colgroup>
+                    <col style="width: 36px">
+                    <col>
+                    <col style="width: 150px">
+                  </colgroup>
+                  <tbody>
+                    <tr>
+                      <td>
+                        1
+                      </td>
+                      <td>
+                        <p class="margin-bottom-4 txt-gray">&#8470; 14516/21/77054-ИП от 04.02.2021</p>
+                        ООО «Ромашка»
+                        <p class="subtitle margin-bottom-12">127006, г. Москва, пер. Оружейный, д. 41</p>
+                        <h4>Иные взыскания имущественного характера не в бюджеты РФ&lt;/h4&gt; ОСП по самому
+                          Центральному АО &#8470; 2</h4>
+                        <p class="subtitle">127083, Россия, г. Москва, ул. Мишина, д. 56, корп. 8</p>
+                      </td>
+                      <td class="padding-top-8 txt-right">
+                        1 220 000 000 RUB
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <hr>
+              <div class="margin-bottom-24">
+                <table>
+                  <colgroup>
+                    <col style="width: 36px">
+                    <col>
+                    <col style="width: 150px">
+                  </colgroup>
+                  <tbody>
+                    <tr>
+                      <td>
+                        2
+                      </td>
+                      <td>
+                        <p class="margin-bottom-4 txt-gray">&#8470; 14516/21/77054-ИП от 04.02.2021</p>
+                        ООО &laquo;Ромашка&raquo;
+                        <p class="subtitle margin-bottom-12">127006, г. Москва, пер. Оружейный, д. 41</p>
+                        <h4>Иные взыскания имущественного характера не в бюджеты РФ</h4> ОСП по самому Центральному АО
+                        &#8470; 2
+                        <p class="subtitle">127083, Россия, г. Москва, ул. Мишина, д. 56, корп. 8</p>
+                      </td>
+                      <td class="padding-top-8 txt-right">
+                        1 220 000 000 RUB
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <hr>
+              <table>
+                <colgroup>
+                  <col style="width: 36px">
+                  <col>
+                  <col style="width: 150px">
+                </colgroup>
+                <tbody>
+                  <tr>
+                    <td>
+                      3
+                    </td>
+                    <td>
+                      <p class="margin-bottom-4 txt-gray">&#8470; 14516/21/77054-ИП от 04.02.2021</p>
+                      ООО &laquo;Ромашка&raquo;
+                      <p class="subtitle margin-bottom-12">127006, г. Москва, пер. Оружейный, д. 41</p>
+                      <h4>Иные взыскания имущественного характера не в бюджеты РФ</h4> ОСП по самому Центральному АО
+                      &#8470; 2
+                      <p class="subtitle">127083, Россия, г. Москва, ул. Мишина, д. 56, корп. 8</p>
+                    </td>
+                    <td class="padding-top-8 txt-right">
+                      1 220 000 000 RUB
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div class="page-break-avoid margin-bottom-32">
+              <h2>Банкротство</h2>
+              <p class="margin-bottom-12 txt-gray">Получение сведений о банкротстве физических лиц по данным Единого
+                федерального реестра сведений о банкротстве (ЕФРСБ).</p>
+              <i class="icon-error"></i>
+              Числится в списке должников
+              <h4 class="margin-top-12">10 записей</h4>
+              <div class="margin-bottom-24 margin-top-12">
+                <table>
+                  <colgroup>
+                    <col style="width: 36px">
+                    <col>
+                  </colgroup>
+                  <tbody>
+                    <tr>
+                      <td>
+                        1
+                      </td>
+                      <td>
+                        <p class="margin-bottom-4 txt-gray">&#8470; 14516/21/77054-ИП от 04.02.2021</p>
+                        А33-3373/2018
+                        <p class="subtitle">Арбитражный суд Иркутской области</p>
+                        <p class="margin-top-12 line-h-14">В процедуре конкурсного производства Общества с ограниченной
+                          ответственностью &laquo;Восток ЛТД&raquo; (ОГРН 1033802527329, ИНН 3828006550, место
+                          регистрации: 664043 г.Иркутск, ул.Ракитная, 12, офис 106), признанного несостоятельным
+                          (банкротом) и в отношении которого открыта процедура конкурсного производства на основании
+                          Решения Арбитражного суда Иркутской области по делу &#8470;А19-5340/2016 от 21.05.2018 года,
+                          Определением Арбитражного суда Иркутской области по делу &#8470;А19-5340/2016 от 20.11.2018г.
+                          конкурсный управляющий Загерсон Елена Валерьевна (ИНН 382102745622, СНИЛС 029-232-029 26,
+                          адрес для корреспонденции: 664035, г. Иркутск, ул. Рабочего Штаба, 96), член СРО САУ
+                          &laquo;Авангард&raquo; (ИНН 7705479434, ОГРН 1027705031320, адрес: 105062, г.Москва,
+                          ул.Макаренко, д.5, стр.1а, пом.1, к.8,9,10), освобождена от исполнения обязанностей
+                          конкурсного управляющего ООО &laquo;Восток ЛТД&raquo;.</p>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <hr>
+              <div class="margin-bottom-24">
+                <table>
+                  <colgroup>
+                    <col style="width: 36px">
+                    <col>
+                  </colgroup>
+                  <tbody>
+                    <tr>
+                      <td>
+                        2
+                      </td>
+                      <td>
+                        <p class="margin-bottom-4 txt-gray">&#8470; 14516/21/77054-ИП от 04.02.2021</p>
+                        А33-3373/2018
+                        <p class="subtitle">Арбитражный суд Иркутской области</p>
+                        <p class="margin-top-12 line-h-14">В процедуре конкурсного производства Общества с ограниченной
+                          ответственностью &laquo;Восток ЛТД&raquo; (ОГРН 1033802527329, ИНН 3828006550, место
+                          регистрации: 664043 г.Иркутск, ул.Ракитная, 12, офис 106), признанного несостоятельным
+                          (банкротом) и в отношении которого открыта процедура конкурсного производства на основании
+                          Решения Арбитражного суда Иркутской области по делу &#8470;А19-5340/2016 от 21.05.2018 года,
+                          Определением Арбитражного суда Иркутской области по делу &#8470;А19-5340/2016 от 20.11.2018г.
+                          конкурсный управляющий Загерсон Елена Валерьевна (ИНН 382102745622, СНИЛС 029-232-029 26,
+                          адрес для корреспонденции: 664035, г. Иркутск, ул. Рабочего Штаба, 96), член СРО САУ
+                          &laquo;Авангард&raquo; (ИНН 7705479434, ОГРН 1027705031320, адрес: 105062, г.Москва,
+                          ул.Макаренко, д.5, стр.1а, пом.1, к.8,9,10), освобождена от исполнения обязанностей
+                          конкурсного управляющего ООО &laquo;Восток ЛТД&raquo;.</p>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <hr>
+              <table>
+                <colgroup>
+                  <col style="width: 36px">
+                  <col>
+                </colgroup>
+                <tbody>
+                  <tr>
+                    <td>
+                      3
+                    </td>
+                    <td>
+                      <p class="margin-bottom-4 txt-gray">&#8470; 14516/21/77054-ИП от 04.02.2021</p>
+                      А33-3373/2018
+                      <p class="subtitle">Арбитражный суд Иркутской области</p>
+                      <p class="margin-top-12 line-h-14">В процедуре конкурсного производства Общества с ограниченной
+                        ответственностью &laquo;Восток ЛТД&raquo; (ОГРН 1033802527329, ИНН 3828006550, место
+                        регистрации: 664043 г.Иркутск, ул.Ракитная, 12, офис 106), признанного несостоятельным
+                        (банкротом) и в отношении которого открыта процедура конкурсного производства на основании
+                        Решения Арбитражного суда Иркутской области по делу &#8470;А19-5340/2016 от 21.05.2018 года,
+                        Определением Арбитражного суда Иркутской области по делу &#8470;А19-5340/2016 от 20.11.2018г.
+                        конкурсный управляющий Загерсон Елена Валерьевна (ИНН 382102745622, СНИЛС 029-232-029 26, адрес
+                        для корреспонденции: 664035, г. Иркутск, ул. Рабочего Штаба, 96), член СРО САУ
+                        &laquo;Авангард&raquo; (ИНН 7705479434, ОГРН 1027705031320, адрес: 105062, г.Москва,
+                        ул.Макаренко, д.5, стр.1а, пом.1, к.8,9,10), освобождена от исполнения обязанностей конкурсного
+                        управляющего ООО &laquo;Восток ЛТД&raquo;.</p>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div class="page-break-avoid margin-bottom-32">
+              <h2>Нахождение в розыске</h2>
+              <p class="margin-bottom-12 txt-gray">Проверка нахождения в розыске по данным МВД РФ.</p>
+              <i class="icon-error"></i>
+              В базе данных розыска найдено совпадение
+              <div class="margin-bottom-24 margin-top-12">
+                <table>
+                  <colgroup>
+                    <col style="width: 190px" />
+                    <col />
+                  </colgroup>
+                  <tbody>
+                    <tr>
+                      <td class="padding-bottom-12 txt-gray">Пол</td>
+                      <td class="padding-bottom-12">Мужской</td>
+                    </tr>
+                    <tr>
+                      <td class="padding-bottom-12 txt-gray">Национальность</td>
+                      <td class="padding-bottom-12">Русский</td>
+                    </tr>
+                    <tr>
+                      <td class="padding-bottom-12 txt-gray">Основание для розыска</td>
+                      <td class="padding-bottom-12">Разыскивается по статье УК РФ</td>
+                    </tr>
+                    <tr>
+                      <td class="padding-bottom-12 txt-gray">Место рождения</td>
+                      <td class="padding-bottom-12">141231, Россия, Московская обл., г. Егорьевск</td>
+                    </tr>
+                    <tr>
+                      <td class="txt-gray">Регион розыска</td>
+                      <td>УМВД РОССИИ по Москве и Московской области</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            <div class="page-break-avoid margin-bottom-32">
+              <h2>Террористы и экстремисты</h2>
+              <p class="margin-bottom-12 txt-gray">Информация о попадании физического лица в списки террористов и
+                экстремистов (или об исключении из списков) по данным Росфинмониторинга.</p>
+              <i class="icon-error"></i>
+              В списках террористов и экстремистов найдено совпадение
+            </div>
+
+            <div class="page-break-avoid margin-bottom-32">
+              <h2>Залоги движимого имущества</h2>
+              <p class="margin-bottom-12 txt-gray">Информация об обременении автотранспортных средств и другого
+                движимого имущества по данным ФНП.</p>
+              <i class="icon-warning"></i>
+              В базе Федеральной нотариальной палаты указан залогодателем
+              <h4 class="margin-top-12">2 записи</h4>
+
+              <div class="margin-top-12">
+                <table>
+                  <colgroup>
+                    <col style="width: 36px">
+                    <col>
+                  </colgroup>
+                  <tbody>
+                    <tr>
+                      <td>
+                        1
+                      </td>
+                      <td>
+                        <div class="margin-bottom-12">
+                          <p class="margin-bottom-4 txt-gray">&#8470; 2019-003-827966-961 от 04.02.2021</p>
+                          Самое длинное официальное название договора
+                        </div>
+                        <div class="margin-bottom-12">
+                          <p class="margin-bottom-4 txt-gray">Залогодатель</p>
+                          Константинопольский Константин Константинович
+                        </div>
+                        <div class="margin-bottom-12">
+                          <p class="margin-bottom-4 txt-gray">Залогодержатель</p>
+                          ООО &laquo;Наименование залогодержателя&raquo;
+                        </div>
+
+                        <p class="margin-bottom-4 txt-gray">Залоги</p>
+
+                        <div class="margin-top-12 margin-bottom-4">
+                          <table>
+                            <colgroup>
+                              <col style="width: 36px">
+                              <col>
+                            </colgroup>
+                            <tbody>
+                              <tr>
+                                <td class="padding-bottom-12">1</td>
+                                <td class="padding-bottom-12">
+                                  <p class="txt-gray">VIN: X4XVJ11111LF45253</p>
+                                  <p class="margin-top-4">Описание</p>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>2</td>
+                                <td>
+                                  <p class="txt-gray">VIN: X4XVJ11111LF45253</p>
+                                  <p class="margin-top-4">Описание</p>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <hr>
+            </div>
+
+            <div class="page-break-avoid margin-bottom-32">
+              <h2>Водительское удостоверение</h2>
+              <p class="margin-bottom-12 line-h-14 txt-gray">
+                Информация о сроке действия водительского удостоверения физического лица с подтверждением
+                <br>
+                действительности документа или указанием причины перевода в статус недействительных по данным ГИБДД РФ.
+              </p>
+              <i class="icon-error"></i>
+              Документ недействителен и разыскивается с 00.00.0000
+              <h4 class="margin-top-12">Характеристики ВУ</h4>
+              <div class="margin-bottom-24 margin-top-12">
+                <table>
+                  <colgroup>
+                    <col style="width: 190px" />
+                    <col />
+                  </colgroup>
+                  <tbody>
+                    <tr>
+                      <td class="padding-bottom-12 txt-gray">Дата выдачи</td>
+                      <td class="padding-bottom-12">00.00.0000</td>
+                    </tr>
+                    <tr>
+                      <td class="padding-bottom-12 txt-gray">Срок действия</td>
+                      <td class="padding-bottom-12">00.00.0000</td>
+                    </tr>
+                    <tr>
+                      <td class="padding-bottom-12 txt-gray">Категория</td>
+                      <td class="padding-bottom-12">B, C</td>
+                    </tr>
+                    <tr>
+                      <td class="padding-bottom-12 txt-gray">Кем выдано</td>
+                      <td class="padding-bottom-12">Наименование органа выдавшего водительского удостоверение</td>
+                    </tr>
+                    <tr>
+                      <td class="padding-bottom-12 txt-gray">В базе ГИБДД</td>
+                      <td class="padding-bottom-12">Документ недействителен</td>
+                    </tr>
+                    <tr>
+                      <td class="txt-gray">Водительский стаж владельца с</td>
+                      <td>0000 года</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            <div class="page-break-avoid margin-bottom-32">
+              <h2>Штрафы ГИБДД</h2>
+              <p class="margin-bottom-12 txt-gray">Проверка наличия неоплаченных штрафов по данным ГИС ГМП.</p>
+              <i class="icon-warning"></i>
+              Обнаружены штрафы
+              <div class="margin-top-12">
+                <table>
+                  <colgroup>
+                    <col style="width: 190px" />
+                    <col />
+                  </colgroup>
+                  <tbody>
+                    <tr>
+                      <td>
+                        <h4>Неоплаченные</h4>
+                      </td>
+                      <td class="txt-bold">1 &bull; 500 RUB</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <table>
+                <colgroup>
+                  <col style="width: 36px">
+                  <col>
+                  <col style="width: 150px">
+                </colgroup>
+                <tbody>
+                  <tr>
+                    <td>1</td>
+                    <td>
+                      <div class="margin-bottom-12">500 RUB</div>
+                      <p class="margin-bottom-4 line-h-14 txt-bold">12.2. Управление транспортным средством с нарушением
+                        правил установки на нем государственных регистрационных знаков</p>
+                      <p class="subtitle line-h-14">ОБ ДПС ГИБДД УВД по ТиНАО ГУ МВД России по г. Москве, УФК по г.
+                        Москве (УВД поТиНАО г. Москвы, л/сч. &#8470; 04731524210в)</p>
+                    </td>
+                    <td class="txt-right">01.01.2000</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div class="page-break-avoid margin-bottom-32">
+              <h2>Массовый директор или учредитель</h2>
+              <p class="margin-bottom-12 txt-gray">Определение массовых руководителей и (или) учредителей по данным ФНС
+                РФ.</p>
+              <i class="icon-error"></i>
+              Найден в реестре массовых руководителей и (или) учредителей
+            </div>
+
+            <div class="page-break-before">
+              <div class="page-break-avoid margin-bottom-32">
+                <h2>Проверка по ЕГРИП</h2>
+                <p class="margin-bottom-12 txt-gray">Проверка регистрации физического лица в качестве индивидуального
+                  предпринимателя по данным ФНС.</p>
+                <i class="icon-help"></i>
+                Нет данных
+
+                <!-- <div class="margin-top-12">
+                  Константинопольский Константин Константинович
+                  <p class="margin-top-4 txt-gray">ОГРНИП 1033802527329</p>
+                  <div class="margin-top-4 tag">Действующее</div>
+                </div> -->
+              </div>
+
+              <div class="page-break-avoid margin-bottom-32">
+                <h2>Проверка по ЕГРЮЛ</h2>
+                <p class="margin-bottom-12 txt-gray">Проверка физического лица на учредительство и (или) руководство
+                  организацией по данным ФНС.</p>
+                <i class="icon-warning"></i>
+                Зарегистрирован в качестве учредителя и (или) руководителя организации
+                <div class="margin-top-12">
+                  <table>
+                    <colgroup>
+                      <col style="width: 190px" />
+                      <col />
+                    </colgroup>
+                    <tbody>
+                      <tr>
+                        <td>
+                          <h4 class="margin-bottom-none">В качестве руководителя</h4>
+                        </td>
+                        <td class="txt-bold">1</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div class="margin-top-12">
+                  Константинопольский Константин Константинович
+                  <p class="margin-top-4 txt-gray">ИНН 6635000597 &bull; ОГРНИП 1033802527329</p>
+                  <div class="margin-top-4 tag success">Действующее</div>
+                </div>
+                <div class="margin-top-16">
+                  <table>
+                    <colgroup>
+                      <col style="width: 190px" />
+                      <col />
+                    </colgroup>
+                    <tbody>
+                      <tr>
+                        <td>
+                          <h4 class="margin-bottom-none">В качестве учредителя</h4>
+                        </td>
+                        <td class="txt-bold">3</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+
+                <div class="margin-top-8 margin-bottom-24">
+                  <table>
+                    <colgroup>
+                      <col>
+                      <col style="width: 50%">
+                    </colgroup>
+                    <tbody>
+                      <tr>
+                        <td>
+                          ООО &laquo;Константинопольский Ромашка&raquo;
+                          <p class="margin-top-4 txt-gray">ИНН 6635000597 &bull; ОГРНИП 1033802527329</p>
+                          <div class="margin-top-4 tag success">Действующее</div>
+                        </td>
+                        <td class="txt-right">
+                          1 220 000 000 RUB
+                          <p class="margin-top-4 txt-gray">99,99% &bull; 1 220 000 000 RUB</p>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <hr>
+
+                <div class="margin-bottom-24">
+                  <table>
+                    <colgroup>
+                      <col>
+                      <col style="width: 50%">
+                    </colgroup>
+                    <tbody>
+                      <tr>
+                        <td>
+                          ООО &laquo;Константинопольский Ромашка&raquo;
+                          <p class="margin-top-4 txt-gray">ИНН 6635000597 &bull; ОГРНИП 1033802527329</p>
+                          <div class="margin-top-4 tag success">Действующее</div>
+                        </td>
+                        <td class="txt-right">
+                          1 220 000 000 RUB
+                          <p class="margin-top-4 txt-gray">99,99% &bull; 1 220 000 000 RUB</p>
+                          <div class="margin-top-4">
+                            <span class="txt-warning">Под обременением</span>
+                            <span class="txt-gray">&bull; 10 лет</span>
+                          </div>
+                          <div class="margin-top-4">Залог</div>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <hr>
+
+                <table>
+                  <colgroup>
+                    <col>
+                    <col style="width: 50%">
+                  </colgroup>
+                  <tbody>
+                    <tr>
+                      <td>
+                        ООО &laquo;Константинопольский Ромашка&raquo;
+                        <p class="margin-top-4 txt-gray">ИНН 6635000597 &bull; ОГРНИП 1033802527329</p>
+                        <div class="margin-top-4 tag success">Действующее</div>
+                      </td>
+                      <td class="txt-right">
+                        1 220 000 000 RUB
+                        <p class="margin-top-4 txt-gray">99,99% &bull; 1 220 000 000 RUB</p>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </td>
+      </tr>
+    </tbody>
+    <tfoot class="colontitul-footer">
+      <tr class="only-print">
+        <td class="txt-small colontitul-left">
+          Сервис проверки физических лиц
+        </td>
+        <td class="txt-small colontitul-right">
+          001
+        </td>
+      </tr>
+    </tfoot>
+  </table>
+</body>
+
+</html>
